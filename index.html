@@ -21,7 +21,9 @@
                 <img class="room__img" src="./images/icon-hamburger.svg" alt="Menu">
             </figure>
             <img src="./images/logo.svg" alt="Logo" class="logo">
+            <div class="overlay"></div>
             <nav class="room__nav">
+                <img src="./images/icon-close.svg" alt="Close" class="room__close">
                 <ul>
                     <li><a href="#" class="room__link">home</a></li>
                     <li><a href="#" class="room__link">shop</a></li>
@@ -31,21 +33,19 @@
             </nav>
         </div>
         <figure class="room__picture">
-            <img src="./images/desktop-image-hero-1.jpg" alt="Room" class="room__img">
-            <div class="arrows">
-                <div id="arrow" class="arrow">
-                    <!-- <img class="arrow__img" src="./images/icon-angle-left.svg" alt="Arrow"> -->
-                    <svg class="arrow__img" viewBox="0 0 14 24" width="14" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M13 0L1 12l12 12" stroke="currentColor" fill="none" fill-rule="evenodd"/></svg>
+            <img id="picture" src="./images/desktop-image-hero-1.jpg" alt="Room" class="room__img">
+            <div class="room__arrows">
+                <div id="left" class="room__arrow--btn" aria-disabled="true">
+                    <svg viewBox="0 0 14 24" width="14" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M13 0L1 12l12 12" stroke="currentColor" fill="none" fill-rule="evenodd"/></svg>
                 </div>
-                <div id="arrow" class="arrow">
-                    <!-- <img class="arrow__img" src="./images/icon-angle-right.svg" alt="Arrow"> -->
-                     <svg class="arrow__img" viewBox="0 0 14 24" width="14" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M1 0l12 12L1 24" stroke="currentColor" fill="none" fill-rule="evenodd"/></svg>
+                <div id="right" class="room__arrow--btn" aria-disabled="false">
+                    <svg viewBox="0 0 14 24" width="14" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M1 0l12 12L1 24" stroke="currentColor" fill="none" fill-rule="evenodd"/></svg>
                 </div>
             </div>
         </figure>
         <section class="room__texts">
-            <h1 class="room__title">Discover innovative ways to decorate</h1>
-            <p class="room__text">
+            <h1 id="title" class="room__title">Discover innovative ways to decorate</h1>
+            <p id="text" class="room__text">
                 We provide unmatched quality, comfort, and style for property owners across the country. 
   Our experts combine form and function in bringing your vision to life. Create a room in your 
   own style with our collection and make your property a reflection of you and what you love.
@@ -74,14 +74,11 @@
             </figure>
         </section>
     </main>
+    <script defer src="./js/script.js"></script>
   <!-- Home
   Shop
   About
   Contact
-
-  With stores all over the world, it's easy for you to find furniture for your home or place of business. 
-  Locally, we’re in most major cities throughout the country. Find the branch nearest you using our 
-  store locator. Any questions? Don't hesitate to contact us today.
 
   
 

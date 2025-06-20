@@ -1,16 +1,30 @@
 @use 'variables';
 * {margin: 0; padding: 0; box-sizing: border-box;}
 body {
+
     width: 100%;
     min-height: 100vh;
     font-family: "League Spartan", sans-serif;
     max-width: 1400px;
     margin-inline: auto;
+    position: relative;
 
+    .overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9; // justo debajo del nav
+        background-color: #000;
+        opacity: 0.4;
+        width: 100vw;
+        height: 100vh;
+    }
     @media screen and (min-width: 1024px) {
-        height: auto;
+        align-content: center;
     }
 }
+
 img {display: block;}
 
 p {
