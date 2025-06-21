@@ -2,7 +2,6 @@
 .room {
     width: 100%;
     height: auto;
-    border: 1px solid red;
     position: relative;
     padding: 48px 24px 0px;
     @media screen and (min-width: 768px) {
@@ -126,9 +125,12 @@
         height: 360px;
         position: absolute;
         top: 0; left: 0;
-
+        transition: width 0.5s ease;
         @media screen and (min-width: 1024px) {
-            width: 800px; height: 535px;
+            width: 50%; height: 535px;
+        }
+        @media screen and (min-width: 1200px) {
+            width: 55%;
         }
     }
 
@@ -143,7 +145,7 @@
             width: 160px; height: 80px;
         }
         @media screen and (min-width: 1024px) {
-            transform: translateX(100%);
+            transform: translate(100%, -1px);
         }
     }
 
@@ -183,7 +185,6 @@
         padding: 64px 0;
         position: relative;
         margin-top: 300px;
-        border: 1px solid blue;
         @media screen and (min-width: 1024px) {
             margin-top: 0;
             padding: 64px 100px;
